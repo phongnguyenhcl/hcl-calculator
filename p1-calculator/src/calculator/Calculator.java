@@ -7,10 +7,13 @@ public class Calculator {
 	private String operator;
 	private double result;
 	
+	public static int calculatorCount = 0;
+	
 	public Calculator(double num1, double num2, String operator) {
 		this.num1 = num1;
 		this.num2 = num2;
 		this.operator = operator;
+		++calculatorCount;
 	}
 	
 	public double add(double num1, double num2) {
