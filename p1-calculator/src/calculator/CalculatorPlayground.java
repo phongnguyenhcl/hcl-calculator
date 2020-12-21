@@ -13,6 +13,9 @@ public class CalculatorPlayground {
 		System.out.println("Choose an operator +, -, *, /: ");
 		scan.nextLine();
 		String operator = scan.nextLine();
+		
+		Calculator c1 = new Calculator(num1, num2, operator);
+		System.out.println(c1.getResult());
 	}
 
 }
