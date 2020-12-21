@@ -4,10 +4,10 @@ public class Calculator {
 	
 	private double num1;
 	private double num2;
-	private char operator;
+	private String operator;
 	private double result;
 	
-	public Calculator(double num1, double num2, char operator) {
+	public Calculator(double num1, double num2, String operator) {
 		this.num1 = num1;
 		this.num2 = num2;
 		this.operator = operator;
@@ -31,16 +31,16 @@ public class Calculator {
 	
 	public double getResult() {
 		switch (this.operator) {
-			case '+':
+			case "+":
 				this.result = add(this.num1, this.num2);
 				break;
-			case '-':
+			case "-":
 				this.result = subtract(this.num1, this.num2);
 				break;
-			case '*':
+			case "*":
 				this.result = multiply(this.num1, this.num2);
 				break;
-			case '/':
+			case "/":
 				this.result = divide(this.num1, this.num2);
 				break;
 			default:
@@ -49,7 +49,4 @@ public class Calculator {
 		
 		return this.result;
 	}
-	
-	
-
 }
