@@ -1,12 +1,13 @@
 package calculator;
 
-public class Calculator {
+public final class Calculator {
 	
 	private double num1;
 	private double num2;
 	private String operator;
 	private double result;
 	
+	// keep track of how many calculators have been instantiated
 	public static int calculatorCount = 0;
 	
 	public Calculator(double num1, double num2, String operator) {

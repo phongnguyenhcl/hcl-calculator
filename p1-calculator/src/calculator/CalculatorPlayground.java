@@ -1,6 +1,8 @@
 package calculator;
 
 import java.util.Scanner;
+import java.io.*; 
+import java.lang.*;
 
 public class CalculatorPlayground {
 
@@ -15,8 +17,15 @@ public class CalculatorPlayground {
 		String operator = scan.nextLine();
 		
 		Calculator c1 = new Calculator(num1, num2, operator);
-		System.out.println(c1.getResult());
-		System.out.println(Calculator.calculatorCount);
+		
+		if (c1.getResult() % 1 != 0) {
+			System.out.println(String.format("%.3f", c1.getResult()));
+		} else {
+			System.out.println(String.format("%.0f", c1.getResult()));
+
+		}
+		System.out.println();
+		System.out.println("Number of Calculators: " + Calculator.calculatorCount);
 	}
 
 }
