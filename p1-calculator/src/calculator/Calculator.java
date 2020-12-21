@@ -1,3 +1,9 @@
+/**
+ * A Calculator class calculates the result
+ * of using the arithmetic operator.
+ *
+ * @author  Phong Van Nguyen
+ */
 package calculator;
 
 public final class Calculator {
